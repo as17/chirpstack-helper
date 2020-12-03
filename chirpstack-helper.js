@@ -37,7 +37,7 @@ function IEEE754_8BytesToFloat32(byteArray,inputTypeLittleEndian){
     signed float
     */
     if (inputTypeLittleEndian!=1){
-        byteArray=byteArray.reverse;
+        byteArray=byteArray.reverse();
     }
     var arr_bits=''; //contains the bitwise information as string. e.g. '01000100100100100'
     for (i=0;i<byteArray.length;i++){
